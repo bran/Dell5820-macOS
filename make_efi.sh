@@ -9,16 +9,16 @@ TARGET_DIR=$1
 
 DL_DEPENDENCIES=(
 	# OpenCore
-	https://github.com/acidanthera/OpenCorePkg/releases/download/0.5.5/OpenCore-0.5.5-RELEASE.zip
-	https://github.com/acidanthera/AppleSupportPkg/releases/download/2.1.5/AppleSupport-2.1.5-RELEASE.zip
+	https://github.com/acidanthera/OpenCorePkg/releases/download/0.5.7/OpenCore-0.5.7-RELEASE.zip
+	https://github.com/acidanthera/AppleSupportPkg/releases/download/2.1.6/AppleSupport-2.1.6-RELEASE.zip
 
 	# Drivers & kexts
 	https://bitbucket.org/RehabMan/os-x-intel-network/downloads/RehabMan-IntelMausiEthernet-v2-2018-1031.zip
-	https://github.com/acidanthera/Lilu/releases/download/1.4.1/Lilu-1.4.1-RELEASE.zip
+	https://github.com/acidanthera/Lilu/releases/download/1.4.3/Lilu-1.4.3-RELEASE.zip
 	https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/RehabMan-USBInjectAll-2018-1108.zip
-	https://github.com/acidanthera/VirtualSMC/releases/download/1.1.1/VirtualSMC-1.1.1-RELEASE.zip
+	https://github.com/acidanthera/VirtualSMC/releases/download/1.1.2/VirtualSMC-1.1.2-RELEASE.zip
 	https://downloads.sourceforge.net/project/voodoohda/VoodooHDA.kext-292.zip
-	https://github.com/acidanthera/WhateverGreen/releases/download/1.3.6/WhateverGreen-1.3.6-RELEASE.zip
+	https://github.com/acidanthera/WhateverGreen/releases/download/1.3.8/WhateverGreen-1.3.8-RELEASE.zip
 )
 
 if [ -z "$TARGET_DIR" ]; then
