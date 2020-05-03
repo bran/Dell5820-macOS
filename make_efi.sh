@@ -19,6 +19,8 @@ DL_DEPENDENCIES=(
 	https://github.com/acidanthera/VirtualSMC/releases/download/1.1.2/VirtualSMC-1.1.2-RELEASE.zip
 	https://downloads.sourceforge.net/project/voodoohda/VoodooHDA.kext-292.zip
 	https://github.com/acidanthera/WhateverGreen/releases/download/1.3.8/WhateverGreen-1.3.8-RELEASE.zip
+	https://github.com/dukzcry/osx-goodies/releases/download/1.2/SASMegaRAID.zip
+	https://github.com/acidanthera/OcBinaryData/archive/master.zip
 )
 
 if [ -z "$TARGET_DIR" ]; then
@@ -66,9 +68,11 @@ mkdir -p "$TARGET_DIR/OC/Kexts"
 mv OpenCore*/EFI/BOOT/BOOTx64.efi "$TARGET_DIR/BOOT"
 mv OpenCore*/EFI/OC/Tools "$TARGET_DIR/OC"
 mv OpenCore*/EFI/OC/OpenCore.efi "$TARGET_DIR/OC"
+mv OpenCore*/EFI/OC/Drivers/OpenCanopy.efi "$TARGET_DIR/OC/Drivers"
 mv AppleSupport*/Drivers/ApfsDriverLoader.efi "$TARGET_DIR/OC/Drivers"
 mv AppleSupport*/Drivers/VBoxHfs.efi "$TARGET_DIR/OC/Drivers"
 mv OpenCore*/EFI/OC/Drivers/OpenRuntime.efi "$TARGET_DIR/OC/Drivers"
+mv master/OcBinaryData*/Resources "$TARGET_DIR/OC/"
 
 # VirtualSMC
 mv VirtualSMC*/Kexts/SMCProcessor.kext "$TARGET_DIR/OC/Kexts"
@@ -81,6 +85,7 @@ mv RehabMan-IntelMausiEthernet*/Release/IntelMausiEthernet.kext "$TARGET_DIR/OC/
 mv Lilu*/Lilu.kext "$TARGET_DIR/OC/Kexts"
 mv VoodooHDA*/VoodooHDA.kext "$TARGET_DIR/OC/Kexts"
 mv WhateverGreen*/WhateverGreen.kext "$TARGET_DIR/OC/Kexts"
+mv SASMegaRAID*/SASMegaRAID.kext "$TARGET_DIR/OC/Kexts"
 
 popd
 rm -rf $DOWNLOAD_DIR
