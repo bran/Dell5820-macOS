@@ -1,6 +1,6 @@
-# Precision 7820 Hackintosh
+# Precision 5820 Hackintosh (Dell firmware 2.0.2)
 
-macOS 10.15 Catalina on Dell Precision 7820 with [OpenCore](https://github.com/acidanthera/OpenCorePkg). Currently working with 10.15.3! If you find something broken, please make a PR!
+macOS 10.15 Catalina on Dell Precision 5820 with [OpenCore](https://github.com/acidanthera/OpenCorePkg). Currently working with 10.15.4! If you find something broken, please make a PR!
 
 The docs & tools that helped me set this up are here, a big thanks to:
 
@@ -24,10 +24,9 @@ Point this at _EFI directory_ of a USB stick or the ESP from your new install. I
 I would love to hear feedback about this configuration from someone with a dual CPU machine!
 
 ### It works on my machine™
-- 1x Xeon Silver 4114
-- 32 GB DDR4 2400
-- AMD 7870
-  - If someone else has this old thing, add `radgpu=15` to your kernel args
+- Intel Xeon W-2155
+- 64 GB DDR4 2666
+- AMD RX 470D
 
 ### Working
 - USB 3 A/C
