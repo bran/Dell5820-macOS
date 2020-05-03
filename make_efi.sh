@@ -68,7 +68,7 @@ mv OpenCore*/EFI/OC/Tools "$TARGET_DIR/OC"
 mv OpenCore*/EFI/OC/OpenCore.efi "$TARGET_DIR/OC"
 mv AppleSupport*/Drivers/ApfsDriverLoader.efi "$TARGET_DIR/OC/Drivers"
 mv AppleSupport*/Drivers/VBoxHfs.efi "$TARGET_DIR/OC/Drivers"
-mv OpenCore*/EFI/OC/Drivers/FwRuntimeServices.efi "$TARGET_DIR/OC/Drivers"
+mv OpenCore*/EFI/OC/Drivers/OpenRuntime.efi "$TARGET_DIR/OC/Drivers"
 
 # VirtualSMC
 mv VirtualSMC*/Kexts/SMCProcessor.kext "$TARGET_DIR/OC/Kexts"
