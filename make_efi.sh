@@ -19,7 +19,6 @@ DL_DEPENDENCIES=(
 	https://github.com/acidanthera/VirtualSMC/releases/download/1.1.2/VirtualSMC-1.1.2-RELEASE.zip
 	https://downloads.sourceforge.net/project/voodoohda/VoodooHDA.kext-292.zip
 	https://github.com/acidanthera/WhateverGreen/releases/download/1.3.8/WhateverGreen-1.3.8-RELEASE.zip
-	https://github.com/dukzcry/osx-goodies/releases/download/1.2/SASMegaRAID.zip
 	https://github.com/acidanthera/OcBinaryData/archive/master.zip
 )
 
@@ -85,7 +84,6 @@ mv RehabMan-IntelMausiEthernet*/Release/IntelMausiEthernet.kext "$TARGET_DIR/OC/
 mv Lilu*/Lilu.kext "$TARGET_DIR/OC/Kexts"
 mv VoodooHDA*/VoodooHDA.kext "$TARGET_DIR/OC/Kexts"
 mv WhateverGreen*/WhateverGreen.kext "$TARGET_DIR/OC/Kexts"
-mv SASMegaRAID*/SASMegaRAID.kext "$TARGET_DIR/OC/Kexts"
 
 popd
 rm -rf $DOWNLOAD_DIR
