@@ -17,7 +17,7 @@ DL_DEPENDENCIES=(
 	https://github.com/acidanthera/Lilu/releases/download/1.4.3/Lilu-1.4.3-RELEASE.zip
 	https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/RehabMan-USBInjectAll-2018-1108.zip
 	https://github.com/acidanthera/VirtualSMC/releases/download/1.1.2/VirtualSMC-1.1.2-RELEASE.zip
-	https://downloads.sourceforge.net/project/voodoohda/VoodooHDA.kext-292.zip
+	https://github.com/acidanthera/AppleALC/releases/download/1.4.9/AppleALC-1.4.9-RELEASE.zip
 	https://github.com/acidanthera/WhateverGreen/releases/download/1.3.8/WhateverGreen-1.3.8-RELEASE.zip
 	https://github.com/acidanthera/OcBinaryData/archive/master.zip
 )
@@ -32,7 +32,7 @@ mkdir -p $TARGET_DIR
 if [ -d "$TARGET_DIR/OC" ]; then
 	printf "OK to delete existing %s?\n" "$TARGET_DIR/OC"
 	read -p "(y/n): " choice
-	case "$choice" in 
+	case "$choice" in
 		y|Y )
 			rm -rf "$TARGET_DIR/OC"
 			;;
@@ -82,7 +82,7 @@ mv VirtualSMC*/Kexts/VirtualSMC.kext "$TARGET_DIR/OC/Kexts"
 mv RehabMan-USBInjectAll*/Release/USBInjectAll.kext "$TARGET_DIR/OC/Kexts"
 mv RehabMan-IntelMausiEthernet*/Release/IntelMausiEthernet.kext "$TARGET_DIR/OC/Kexts"
 mv Lilu*/Lilu.kext "$TARGET_DIR/OC/Kexts"
-mv VoodooHDA*/VoodooHDA.kext "$TARGET_DIR/OC/Kexts"
+mv AppleALC*/AppleALC.kext "$TARGET_DIR/OC/Kexts"
 mv WhateverGreen*/WhateverGreen.kext "$TARGET_DIR/OC/Kexts"
 
 popd
