@@ -1,6 +1,6 @@
-# Precision 7820 Hackintosh
+# Precision 5820 Hackintosh
 
-macOS 10.15 Catalina on Dell Precision 7820 with [OpenCore](https://github.com/acidanthera/OpenCorePkg). Currently working with 10.15.3! If you find something broken, please make a PR!
+macOS 10.15 Catalina on Dell Precision 5820 with [OpenCore](https://github.com/acidanthera/OpenCorePkg). Currently working with 10.15.3! If you find something broken, please make a PR!
 
 The docs & tools that helped me set this up are here, a big thanks to:
 
